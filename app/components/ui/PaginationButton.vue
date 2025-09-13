@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <button
     :class="[
-      'size-11 rounded-xl border flex items-center justify-center',
+      'size-11 rounded-xl border flex items-center justify-center leading-none',
       active
         ? 'bg-black-rich text-white border-black-rich'
         : 'border-gray-soft bg-gray-soft text-black-rich hover:bg-gray-light hover:border-gray-light'
@@ -18,4 +18,3 @@ defineProps<{
     <slot />
   </button>
 </template>
-

@@ -44,16 +44,16 @@ const socialLinks = {
           <!-- Левая часть с заголовком -->
           <div class="mt-[140px]">
             <p class="text-sm mb-6">Is there a project?</p>
-            <h2 class="text-[112px] font-normal leading-[100%] decoration-1">
-              <span class="decoration-1 underline underline-offset-8">Let’s work</span> <br />
-              <span class="decoration-1 underline underline-offset-8">to</span>
+            <h2 class="text-[112px] font-normal leading-[100%]">
+              <span class="decoration-1 underline underline-offset-[18px]">Let’s work</span> <br />
+              <span class="decoration-1 underline underline-offset-[18px]">to</span>
               <span>g</span>
-              <span class="decoration-1 underline underline-offset-8">ether</span>
+              <span class="decoration-1 underline underline-offset-[18px]">ether</span>
             </h2>
           </div>
 
           <!-- Правая часть с контактами -->
-          <div class="w-[35%] flex flex-col items-start gap-12 mt-[215px] text-lg">
+          <div class="w-[35%] flex flex-col items-start gap-12 mt-[215px]">
             <div v-for="(block, index) in contactBlocks" :key="index">
               <p class="mb-2">{{ block.title }}</p>
               <p v-for="(line, lineIndex) in block.lines" :key="lineIndex" v-html="line.text" />
@@ -65,7 +65,7 @@ const socialLinks = {
 
       <div class="relative flex justify-between items-end">
         <!-- Соцсети слева -->
-        <div class="flex gap-6 text-lg">
+        <div class="flex gap-6">
           <a
             v-for="link in socialLinks.left"
             :key="link.name"
@@ -76,12 +76,12 @@ const socialLinks = {
           </a>
         </div>
       
-        <button class="absolute left-1/2 -translate-x-1/2 rounded-full -bottom-[450px] size-96 bg-black text-white text-xl flex items-center justify-center -translate-y-1/2 pb-24">
+        <button class="absolute left-1/2 -translate-x-1/2 rounded-full -bottom-[450px] size-96 bg-black text-white text-[32px] flex items-center justify-center -translate-y-1/2 pb-32">
           <span>Go</span>
         </button>
 
         <!-- Соцсети справа -->
-        <div class="flex gap-6 text-lg">
+        <div class="flex gap-6">
           <a
             v-for="link in socialLinks.right"
             :key="link.name"
