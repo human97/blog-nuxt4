@@ -1,32 +1,33 @@
-# Описание проекта Blog-Nuxt-4  [Просмотр проекта] (https://blog-nuxt4.netlify.app/)
+# Blog-Nuxt-4 | [Демонстрация проекта](https://blog-nuxt4.netlify.app/)
 
-Этот проект представляет собой **Блог**, разработанный с использованием следующих технологий:
+Этот проект представляет собой **блог**, разработанный в рамках тестового задания.
 
-- **Nuxt 4.1.1**
-- **Vue 3.5 (Composition API)**
+## Технологии
+
+- **Nuxt:** 4.1.1
+- **Vue:** 3.5 (Composition API)
 - **TypeScript**
-- **Vue Router**
-- **Vite**
-- **TailwindCSS 3**
+- **Vue Router:** 4.5.1
+- **Vite:** 7.1.5
+- **TailwindCSS:** 3.4.3
+- **Sass:** 1.92.1
 
-1.​ Реализовал верстку шаблона блога по прикрепленному [макету](https://www.figma.com/file/YuLYXnZmLk1U5sKAYjQ0Qy/)
+## Функционал
 
-2.​ Реализовал в проекте взаимодействие с [API](https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/)
+1.  **Верстка:** Реализована верстка шаблона блога по [макету в Figma](https://www.figma.com/file/YuLYXnZmLk1U5sKAYjQ0Qy/).
+2.  **API:** Настроено взаимодействие с [тестовым API](https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/).
+3.  **Модуль блога:**
+    - Вывод списка статей.
+    - Фронтенд-пагинация для навигации по статьям.
+    - Динамические страницы для просмотра отдельных статей.
 
-3. Реализовал в проекте модуль блога:
+---
 
-- Вывод списка статей блога
-- Пагинация на фронтовой части
-- Переход на детальную страницу
+## Установка и запуск
 
+### 1. Установка зависимостей
 
-# Nuxt Minimal Starter
-
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install dependencies:
+Убедитесь, что у вас установлен `npm`, `pnpm`, `yarn` или `bun`.
 
 ```bash
 # npm
@@ -42,9 +43,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+### 2. Запуск сервера для разработки
 
-Start the development server on `http://localhost:3000`:
+Команда запустит сервер для разработки по адресу `http://localhost:3000`.
 
 ```bash
 # npm
@@ -60,9 +61,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+### 3. Сборка для продакшена
 
-Build the application for production:
+Сборка приложения для развертывания на хостинге.
 
 ```bash
 # npm
@@ -78,7 +79,9 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+### 4. Локальный просмотр продакшн-сборки
+
+Эта команда позволяет локально запустить и протестировать продакшн-версию вашего приложения.
 
 ```bash
 # npm
@@ -94,4 +97,4 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Для получения дополнительной информации о развертывании проекта ознакомьтесь с [официальной документацией Nuxt](https://nuxt.com/docs/getting-started/deployment).
