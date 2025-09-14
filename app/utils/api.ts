@@ -3,7 +3,7 @@ import type { BlogPost } from "@/types/blog";
 const BASE_URL = 'https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work';
 
 export const blogApi = {
-  async getPosts(page: number = 1, limit: number = 9): Promise<BlogPost[]> {
+  async getPosts(page: number = 1, limit: number = 8): Promise<BlogPost[]> {
     const url = `${BASE_URL}/posts?page=${page}&limit=${limit}`;
     return await $fetch<BlogPost[]>(url);
   },

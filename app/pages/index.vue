@@ -18,7 +18,7 @@ const handlePageChange = (page: number) => {
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div class="mx-auto w-[1217px]">
     <h1 class="text-[84px] text-black-rich mb-5">Articles</h1>
     
     <BlogList

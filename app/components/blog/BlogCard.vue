@@ -17,7 +17,7 @@ const isHovered = ref(false);
   >
     <NuxtLink :to="`/blog/${post.id}`">
       <article
-        class="absolute inset-0 bg-white overflow-hidden flex flex-col transition-all duration-500 ease-in-out h-full flex flex-col gap-3 text-xl leading-[120%]"
+        class="absolute inset-0 bg-white overflow-hidden flex flex-col transition-all duration-500 ease-in-out h-full gap-3 text-xl leading-[120%]"
         :class="{
           'h-[414px] z-10': isHovered,
           '-translate-y-[34px]': isHovered && !isLastRow,

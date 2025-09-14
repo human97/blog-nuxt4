@@ -50,7 +50,7 @@ const isLastRow = (index: number) => {
     </div>
     
     <template v-else>
-      <div class="grid grid-cols-4 gap-y-5">
+      <div class="flex flex-wrap gap-y-10 justify-between">
         <BlogCard 
           v-for="(post, index) in posts" 
           :key="post.id" 
