@@ -5,7 +5,7 @@ const contactBlocks = [
   {
     title: 'For all questions',
     lines: [
-      { text: '<a href="tel:+7 (920) 278—00—68">+7 (920) 278—00—68</a>' },
+      { text: '<a href="tel:+79202780068">+7 (920) 278—00—68</a>' },
       { text: '<a href="mailto:qtim@agency.com">qtim@agency.com</a>' }
     ],
     showButton: false
