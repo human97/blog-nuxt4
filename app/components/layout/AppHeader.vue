@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <header class="h-[120px] items-center px-10 flex justify-between items-center w-full">
+  <header class="h-[120px] items-center px-10 flex justify-between items-center w-full">
       <NuxtLink to="/">
           <img 
               src="~/assets/images/logo.svg" 
@@ -31,5 +30,4 @@
         </div>
       </div>
     </header>
-  </div>
-</template>    
+</template>
