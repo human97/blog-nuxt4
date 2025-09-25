@@ -5,8 +5,8 @@ const contactBlocks = [
   {
     title: 'For all questions',
     lines: [
-      { text: '+7 (920) 278—00—68' },
-      { text: 'qtim@agency.com' }
+      { text: '<a href="tel:+7 (920) 278—00—68">+7 (920) 278—00—68</a>' },
+      { text: '<a href="mailto:qtim@agency.com">qtim@agency.com</a>' }
     ],
     showButton: false
   },
@@ -55,9 +55,18 @@ const socialLinks = {
           <!-- Правая часть с контактами -->
           <div class="w-[35%] flex flex-col items-start gap-12 mt-[215px]">
             <div v-for="(block, index) in contactBlocks" :key="index">
-              <p class="mb-2">{{ block.title }}</p>
-              <p v-for="(line, lineIndex) in block.lines" :key="lineIndex" v-html="line.text" />
-              <LocationButton v-if="block.showButton" class="mt-3"/>
+              <p class="mb-2">
+                {{ block.title }}
+              </p>
+              <p
+                v-for="(line, lineIndex) in block.lines"
+                :key="lineIndex"
+                v-html="line.text"
+              />
+              <LocationButton 
+                v-if="block.showButton" 
+                class="mt-3" 
+              />
             </div>
           </div>
         </div>
